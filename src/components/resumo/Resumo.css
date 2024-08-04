@@ -1,0 +1,163 @@
+.container-resumo{
+ display: flex;
+ margin: auto;
+ justify-content: center;
+ top: 10px;
+ padding-top: 60px;
+}
+
+figure {
+  position: absolute;
+  width: 100%;
+  max-width: 700px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  animation: c 10s linear infinite;
+}
+
+@keyframes c {
+  from {
+    backdrop-filter: blur(2vmin) hue-rotate(0deg);
+    -webkit-backdrop-filter: blur(2vmin) hue-rotate(0deg);
+  }
+  to {
+    backdrop-filter: blur(2vmin) hue-rotate(360deg);
+    -webkit-backdrop-filter: blur(2vmin) hue-rotate(360deg);
+  }
+}
+
+figure::after {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  width: 60px;
+  height: 60px;
+  background-image: linear-gradient(
+    320deg,
+    #ff20fb,
+    #f424ff,
+    #d42dff,
+    #b139ff,
+    #9742ff,
+    #8d46ff
+  );
+  content: "";
+  z-index: -1;
+  animation: d 5s linear infinite;
+}
+
+@keyframes d {
+  from {
+    filter: hue-rotate(0deg) brightness(1.5);
+    transform: rotateZ(0deg);
+    border-radius: 0;
+  }
+  50% {
+    border-radius: 49%;
+    filter: hue-rotate(180deg) brightness(1.5);
+  }
+  to {
+    filter: hue-rotate(360deg) brightness(1.5);
+    transform: rotateZ(360deg);
+    border-radius: 0;
+  }
+}
+
+.tituloResumo {
+  font-family: monospace;
+  border-right:  4px solid;
+  overflow: hidden;
+  width: 25ch;
+  animation: escrever 3s steps(24), esconder 3.5s infinite step-end alternate ;
+  font-size: 40px;
+  line-height: 1.5cap;
+  text-wrap: nowrap;
+  color: white;
+  margin-bottom: 20px;
+}
+
+@keyframes escrever {
+    from{
+        width: 0;
+    }
+}
+@keyframes esconder {
+    50%{
+        border-color: transparent ;
+    }
+}
+
+.tituloName {
+    margin: auto;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    color: white;
+    top: -16px;
+    left: 100px;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+
+
+
+
+
+
+
+
+figcaption {
+  font-family: "Figtree", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 2cap;
+  text-wrap: pretty;
+  padding-left: 30px;
+  border-left: 1px solid white;
+  color: #bbb;
+}
+
+@media (max-width: 780px) {
+  figure {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+    .tituloResumo {
+    font-size: 32px;
+  }
+  figcaption {
+    font-size: 16px;
+  }
+}
+
+
+
+.spinner {
+    --s: 9px;
+    width: 56px;
+    height: 56px;
+    background: #e73535;
+    border-radius: 20%;
+    animation: spinner-ehcge9 1.5s infinite linear;
+    position: fixed;
+    justify-content: center;
+    top: -20px;
+    left: -10px;
+    display: flex;
+    clip-path: polygon(0 0,calc(50% - var(--s)) 0,50% var(--s),calc(50% + var(--s)) 0,100% 0,100% calc(50% - var(--s)),calc(100% - var(--s)) 50%,100% calc(50% + var(--s)),100% 100%,calc(50% + var(--s)) 100%, 50% calc(100% - var(--s)),calc(50% - var(--s)) 100%,0 100%,0 calc(50% + var(--s)), var(--s) 50%, 0 calc(50% - var(--s)));
+  }
+  
+  @keyframes spinner-ehcge9 {
+    100% {
+      transform: rotate(0.2turn);
+    }
+  }

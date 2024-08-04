@@ -2,12 +2,22 @@ import React from 'react'
 import './Navbar.css' 
 
 function Navbar() {
+
   return (
     <>
     <header>
       <div className="island__container">
         <div className="island">
-          <div className="island__bar"></div>
+          
+        <div className="island__bar">
+        <nav>
+          <ul>
+            <li className="menubt"><a href="">First</a></li>
+            <li className="menubt"><a href="">Second</a></li>
+            <li className="menubt"><a href="">Third</a></li>
+          </ul>
+        </nav>
+        </div>
           <div className="avatar">
             <img
               src="https://ik.imagekit.io/wzl99vhez/Convite%20Formatura%20Generation/Vinicius.png?updatedAt=1706233530929"
@@ -16,7 +26,7 @@ function Navbar() {
           </div>
         </div>
       </div>
-      <h1>Vinicius Monteiro</h1>
+      {/* <h1 className='nameProfile'>Vinicius Monteiro</h1> */}
     </header> 
     </>
   )
