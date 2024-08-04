@@ -23,7 +23,7 @@
   header {
     position: sticky;
     top: calc(var(--header-height) * -0.65);
-    height: var(--header-height);
+    height: 240px;
     width: 100%;
     font-size: var(--header-font);
     animation: block both linear;
@@ -52,6 +52,7 @@
     left: 50%;
     translate: -50% -0%;
     background: black;
+    
     
   }
 
@@ -91,7 +92,6 @@
     left: 50%;
     top: var(--avatar-position);
     translate: -50% 0;
-    
   }
 
   /* Scroll stuff */
@@ -271,6 +271,8 @@ ul{
   background-color: var(--color);
   transition: 1s ease;
  }
+
+
  
  .menubt::before {
   top: -1em;

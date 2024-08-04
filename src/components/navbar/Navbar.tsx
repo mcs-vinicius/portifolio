@@ -19,14 +19,10 @@ function Navbar() {
         </nav>
         </div>
           <div className="avatar">
-            <img
-              src="https://ik.imagekit.io/wzl99vhez/Convite%20Formatura%20Generation/Vinicius.png?updatedAt=1706233530929"
-              alt="Your avatar"
-            />
+            <img src="https://ik.imagekit.io/wzl99vhez/Convite%20Formatura%20Generation/Vinicius.png?updatedAt=1706233530929"alt="Your avatar"/>
           </div>
         </div>
       </div>
-      {/* <h1 className='nameProfile'>Vinicius Monteiro</h1> */}
     </header> 
     </>
   )

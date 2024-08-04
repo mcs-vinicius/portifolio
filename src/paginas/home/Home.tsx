@@ -8,6 +8,7 @@ function Home(){
         <div className='h-full bg-black flex '>
             <Navbar/>
             <Resumo/>
+            
         </div>
     );
 }
