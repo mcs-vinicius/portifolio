@@ -148,7 +148,7 @@ figcaption {
     height: 56px;
     background: #e73535;
     border-radius: 20%;
-    animation: spinner-ehcge9 1.5s infinite linear;
+    animation: spinner-ehcge9 3.5s infinite linear;
     position: fixed;
     justify-content: center;
     top: -20px;
@@ -159,7 +159,7 @@ figcaption {
   
   @keyframes spinner-ehcge9 {
     100% {
-      transform: rotate(0.2turn);
+      transform: rotate(-0.5turn);
     }
   }
 
