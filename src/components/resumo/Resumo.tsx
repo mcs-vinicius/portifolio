@@ -6,7 +6,7 @@ function Resumo() {
     <div className='container-resumo'>
         
         <figure>
-            <div className="spinner"></div>
+          <div className="spinner"></div>
             <h1 className='tituloResumo'>- Desenvolvedor Frontend </h1>
             <h2 className='tituloName'>Vinicius Monteiro</h2>
             <figcaption>
@@ -43,9 +43,6 @@ function Resumo() {
             </button>
 
             <span className="title">Contato</span>
-          </div>
-          <div>
-            
           </div>
         </figure>
     </div>
