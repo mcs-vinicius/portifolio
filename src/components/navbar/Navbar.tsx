@@ -10,7 +10,7 @@ function Navbar() {
           
         <div className="island__bar">
         <nav>
-          <ul>
+          <ul className='lista'>
             <li className="menubt"><a href="">First</a></li>
             <li className="menubt"><a href="">Second</a></li>
             <li className="menubt"><a href="">Third</a></li>

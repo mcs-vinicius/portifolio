@@ -5,7 +5,7 @@ import Profissional from '../../components/profissional/Profissional';
 
 function Home(){
     return (
-        <div className='h-full bg-black flex '>
+        <div>
             <Navbar/>
             <Resumo/>
             <Profissional/>

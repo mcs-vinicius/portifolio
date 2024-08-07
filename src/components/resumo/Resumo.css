@@ -7,7 +7,7 @@
  position:relative;
 }
 
-figure {
+figure , .container-time {
   position: relative;
   width: 100%;
   max-width: 700px;
@@ -106,14 +106,6 @@ figure::after {
     font-size: 2em;
   }
   
-
-
-
-
-
-
-
-
 figcaption {
   font-family: "Figtree", sans-serif;
   font-size: 18px;

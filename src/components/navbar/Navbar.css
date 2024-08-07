@@ -95,39 +95,6 @@
     
   }
 
-  /* Scroll stuff */
-  body {
-    display: flex;
-    background: canvas;
-    background-color: rgba(15, 9, 31, 0.897);
-    flex-direction: column;
-    min-height: calc(100svh + var(--header-height));
-  }
-
-  main {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 4rem;
-  }
-
-/*   .nameProfile {
-    margin: 0;
-    position: fixed;
-    font-size: 3rem;
-    color: antiquewhite;
-    top: calc(var(--header-height) + var(--header-margin));
-    translate: -50% -100%;
-    left: 50%;
-    animation: scale both linear;
-    animation-timeline: scroll(root);
-    transform-origin: 50% 0;
-    animation-range: 0 calc(var(--header-height) * 0.65);
-    font-family: monospace;
-  } */
-
   .avatar {
     overflow: hidden;
     animation: shrink both linear;
@@ -180,39 +147,6 @@
     box-sizing: border-box;
   }
 
-  body {
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
-    font-family: 'SF Pro Text', 'SF Pro Icons', 'AOS Icons', 'Helvetica Neue',
-      Helvetica, Arial, sans-serif, system-ui;
-  }
-
- 
-
-  body::before {
-    --size: 45px;
-    --line: color-mix(in lch, canvasText, rgba(206, 194, 194, 0.719)  60% );
-    content: '';
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    background: linear-gradient(
-          90deg,
-          var(--line) 1px,
-          transparent 1px var(--size)
-        )
-        50% 50% / var(--size) var(--size),
-      linear-gradient(var(--line) 1px, transparent 1px var(--size)) 50% 50% /
-        var(--size) var(--size);
-    mask: linear-gradient(-20deg, transparent 50%, rgb(49, 50, 107));
-    top: 0;
-    transform-style: flat;
-    pointer-events: none;
-    z-index: -1;
-  }
-
-
   /* Utilities */
   .sr-only {
     position: absolute;
@@ -229,12 +163,11 @@
 
 
 /* Nav */
-
 a{
   text-decoration-line: none;
   color: rgb(248, 221, 221);
 }
-ul{
+.lista{
   display: flex;
   position: relative;
   left: -13px;
@@ -275,8 +208,6 @@ ul{
   transition: 1s ease;
  }
 
-
- 
  .menubt::before {
   top: -1em;
   left: -1em;
