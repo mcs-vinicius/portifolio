@@ -1,4 +1,4 @@
-.container-resumo{
+.container-resumo, .container-stacks{
  display: flex;
  margin: auto;
  justify-content: center;
@@ -7,7 +7,7 @@
  position:relative;
 }
 
-figure , .container-time {
+figure , .container-time, .container-stacks {
   position: relative;
   width: 100%;
   max-width: 700px;

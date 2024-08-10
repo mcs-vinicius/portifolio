@@ -22,7 +22,7 @@ function Profissional() {
           <p>Levantamento de Requisitos (funcionais/não funcionais) para o desenvolvimento de novas funcionalidades e/ou correções do sistema SAJADM.</p>
           <p>Validação das funcionalidades desenvolvidas e apresentação técnica das mesmas ao TJSP em busca de sua aprovação e Apoio aos Desenvolvedores e Analistas de suporte (N1 e N2) no escarecimento de dúvidas sobre as regras de negócios</p>
           <p>Produção de recursos educacionais, como manuais técnicos e
-          vídeos explicativos, para aplicação de treinamentos aos usuarios do sistema sobre as novas funcionalidades desenvolvidas.</p>
+          vídeos explicativos para aplicação de treinamentos aos usuarios do sistema sobre as novas funcionalidades desenvolvidas.</p>
         </div>
       </li>
       <li>

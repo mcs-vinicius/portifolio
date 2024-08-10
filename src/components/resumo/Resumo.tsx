@@ -1,4 +1,6 @@
 import './Resumo.css'
+import { Input, initTWE } from "tw-elements";
+initTWE({ Input }, { allowReinits: true });
 
 function Resumo() {
     
@@ -43,6 +45,8 @@ function Resumo() {
             </button>
 
             <span className="title">Contato</span>
+
+            
           </div>
           <div>
             
