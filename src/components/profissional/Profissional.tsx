@@ -6,7 +6,7 @@ function Profissional() {
     <div className="container-time">
       <h2 className='expProfissional'>Experiência Profissional</h2>
   <div className="timeline">
-    <ul>
+    <ul >
     <li>
         <div className="timeline-contentt">
           <h3 className="date">Jul 2024 - Set 2024 (Temporário)</h3>
@@ -14,7 +14,7 @@ function Profissional() {
           <p>Apoio à infraestrutura de TeleUTI: plataforma de comunicação por vídeo chamada e que também comunica dados de equipamentos médicos em tempo real (eletrocardiograma, monitor multiparamétrico, ventilador mecânico e bombas de infusão). </p>
         </div>
       </li>
-    <li>
+    <li >
         <div className="timeline-contentt">
           <h3 className="date">Fev 2022 - Jun 2023</h3>
           <h1>Analista de sistema I</h1>

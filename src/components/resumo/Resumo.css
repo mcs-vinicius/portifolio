@@ -117,6 +117,15 @@ figcaption {
   color: #bbb;
 }
 
+.div-1 {
+  display: flex;
+  gap: 10px;
+}
+
+.div-2{
+  margin-left: 20px;
+}
+
 @media (max-width: 780px) {
   figure {
     max-width: 90%;
@@ -228,7 +237,6 @@ figcaption {
     font-size: 14px;
     transition: all .15s ease;
     text-wrap: nowrap;
-    left: 10px;
   }
   
   .button::before,
@@ -336,3 +344,51 @@ figcaption {
   }
   
   
+ /* Media Query */
+ @media only screen and (max-width: 430px) {
+  .container-resumo{
+   justify-content: center;
+   align-content: center;
+   width: 485px;
+   margin-top: -20px;
+ }
+ figure{
+   text-align: justify;
+   width: 100%;
+ }
+  .container{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   text-align: center;
+ }
+ .div-1{
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   margin: auto;   
+ }
+ .div-2{
+  margin: auto;   
+
+  width: 100%;
+}
+ .tituloResumo{
+   font-size: 1.9em;
+ }
+ .tituloName {
+   font-family: monospace;
+   font-size: 1.5em;
+   justify-content: center;
+   left: 0px;
+   padding-top: 4px;
+ }
+ .title{
+   position: absolute;
+   justify-content: center;
+   width: 100%;
+   color: white;
+ }
+}
+
+

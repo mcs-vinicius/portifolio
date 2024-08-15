@@ -124,3 +124,55 @@
     background-color: aqua;
   }
 }
+
+
+/* Media Query */
+@media only screen and (max-width: 390px) {
+  .container-time{
+    justify-content: center;
+    align-content: center;
+    
+  }
+
+  .timeline-contentt{
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  .timeline-contentt span{
+    font-size: 12px;
+  }
+  .timeline-contentt p{
+    font-size: 11px;
+  }
+
+  .expProfissional{
+    font-size: 1.8em;
+    padding-top: 15px;
+  }
+
+}
+
+
+@media only screen and (max-width: 430px) {
+
+  .container-time{
+    justify-content: center;
+    align-content: center;
+    width: 400px;
+  }
+ .timeline-contentt{
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .timeline-contentt span{
+    font-size: 12px;
+  }
+  .timeline-contentt p{
+    font-size: 12px;
+  }
+
+  .expProfissional{
+    font-size: 1.8em;
+    padding-top: 15px;
+  }
+}

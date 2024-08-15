@@ -11,7 +11,6 @@ function Home(){
             <Resumo/>
             <Profissional/>
             <Stacks/>
-            
         </div>
     );
 }

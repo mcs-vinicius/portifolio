@@ -232,17 +232,48 @@ a{
  
 
 
+ /* Media Query */
 
 
+ @media only screen and (max-width: 600px) {
+  header{
+    width: auto;
+  }
+  .island__container, .island__bar{
+    position: fixed;
+    margin: auto;
+  }
 
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    animation: fade both linear;
+    animation-timeline: scroll(root);
+    animation-range: 0 calc(var(--header-height) * 0.425);
+  }
+}
 
+ @media only screen and (max-width: 430px) {
+  header{
+    width: 430px;
+  }
+  .island__container, .island__bar{
+    position: fixed;
+    margin: auto;
+  }
 
-
-
-
-
-
-
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    animation: fade both linear;
+    animation-timeline: scroll(root);
+    animation-range: 0 calc(var(--header-height) * 0.425);
+  }
+}
 
 
 
