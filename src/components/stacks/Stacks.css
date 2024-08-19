@@ -1,6 +1,7 @@
 .tecnologias{
 	color: white;
 	position: relative;
+	font-size: 2.1em;
   }
 
   .container-stacks{
@@ -80,47 +81,8 @@
 
 
 
-   /* Media Query */
-   @media only screen and (max-width: 390px) {
-	.container-stacks{
-	  justify-content: center;
-	  align-content: center;
-	  width: 370px;
-	}
-	.container-stacks{
-		height: 470px;
-		width: 370px;
-		margin: auto;
-		margin-top: 50px;
-		margin-bottom: 50px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	  	align-content: center;
-	  }
-	  .carousel-wrapper {
-		--width: 90px;
-		--gap: 0;
-		--num-items: 10;
-		--ani-offset: calc(var(--width) * var(--num-items) * -1);
-		--ani-speed: 40s;
-		width: 356px;
-		overflow: hidden;
-		position: relative;
-	  }
-	  .carousel-wrapper::before,
-	  .carousel-wrapper::after{
-		content: '';
-		position: absolute;
-		width: 20%;
-		height: 100%;
-		z-index: 1;
-		top: 0;
-	  }
-  }
-
-
-   @media only screen and (max-width: 430px) {
+  /* Media Query */
+  @media only screen and (max-width: 530px) {
 	.container-stacks{
 	  justify-content: center;
 	  align-content: center;
@@ -157,3 +119,41 @@
 		top: 0;
 	  }
   }
+
+  @media only screen and (min-width:531px) and (max-width: 650px)   {
+	.container-stacks{
+		justify-content: center;
+		align-content: center;
+		width: 550px;
+	  }
+	  .container-stacks{
+		  height: 470px;
+		  width: 550px;
+		  margin: auto;
+		  margin-top: 50px;
+		  margin-bottom: 50px;
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+			align-content: center;
+		}
+		.carousel-wrapper {
+		  --width: 90px;
+		  --gap: 0;
+		  --num-items: 10;
+		  --ani-offset: calc(var(--width) * var(--num-items) * -1);
+		  --ani-speed: 40s;
+		  width: 545px;
+		  overflow: hidden;
+		  position: relative;
+		}
+		.carousel-wrapper::before,
+		.carousel-wrapper::after{
+		  content: '';
+		  position: absolute;
+		  width: 20%;
+		  height: 100%;
+		  z-index: 1;
+		  top: 0;
+		}
+	}

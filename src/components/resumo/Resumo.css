@@ -7,7 +7,7 @@
  position:relative;
 }
 
-figure , .container-time, .container-stacks {
+figure , .container-time, .container-stacks, .container-projetos {
   position: relative;
   width: 100%;
   max-width: 700px;
@@ -344,8 +344,10 @@ figcaption {
   }
   
   
- /* Media Query */
- @media only screen and (max-width: 430px) {
+ 
+
+  /* Media Query */
+ @media only screen and (max-width: 530px) {
   .container-resumo{
    justify-content: center;
    align-content: center;
@@ -370,7 +372,6 @@ figcaption {
  }
  .div-2{
   margin: auto;   
-
   width: 100%;
 }
  .tituloResumo{
@@ -391,4 +392,38 @@ figcaption {
  }
 }
 
-
+@media only screen and (min-width:530px) and (max-width: 650px)   {
+  .container-resumo{
+    justify-content: center;
+    align-content: center;
+    width: 616px;
+    margin-top: -20px;
+  }
+  figure{
+    text-align: justify;
+    width: 100%;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .div-1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: auto;   
+  }
+  .div-2{
+   margin: auto;   
+   width: 100%;
+ }
+ .tituloResumo{
+  font-size: 2.7em;
+ }
+ 
+ .tituloName{
+  font-size: 1.9em;
+ }
+}
