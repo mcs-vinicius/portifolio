@@ -11,9 +11,9 @@ function Home(){
         <div>
             <Navbar/>
             <Resumo/>
-            <Profissional/>
             <Stacks/>
-            <Projetos/>  
+            <Projetos/> 
+            <Profissional/>
         </div>
     );
 }
