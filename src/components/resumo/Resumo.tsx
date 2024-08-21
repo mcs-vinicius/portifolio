@@ -3,7 +3,6 @@ import { Input, initTWE } from "tw-elements";
 initTWE({ Input }, { allowReinits: true });
 
 function Resumo() {
-      
   return (
     <div id='Resumo'  className='container-resumo'>
         
@@ -15,15 +14,50 @@ function Resumo() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </figcaption>
 
-           {/*  <div className='div-timeline'>
-              <div className='line-time'></div>
-              <div>
-                <div className='ads'></div>
-                <div className='pos'></div>
-                <div className='gen'></div>
+            {/* Timeline formação */}
+            <div className="timeline-area">
+                  <div className="container-grad">
+                    <div className="timelines">
+                      <h2>Formação</h2>
+                    </div>
+                    <div className="all-timelines">
+                  
+                      <div className="single-timeline d-flex-2">
+                        <div className="timeline-blank"></div>
+                        <div className="timeline-text d-flex-2">
+                          <span>
+                            <h6>Bootcamp Desenvolvedor Full Stack Java/React</h6>
+                            Out 2023 - Mar 2024
+                          </span>
+                          <div className="t-square"></div>
+                        </div>
+                      </div>
+                    
+                      <div className="single-timeline d-flex-2">
+                        <div className="timeline-blank"></div>
+                        <div className="timeline-text d-flex-2">
+                          <span>
+                            <h6>ESP. Projetos Ágeis Para Aplicativos Móveis</h6>
+                            Fev 2021 - Dez 2021
+                          </span>
+                          <div className="t-square"></div>
+                        </div>
+                      </div>
+                  
+                      <div className="single-timeline d-flex-2">
+                        <div className="timeline-blank"></div>
+                        <div className="timeline-text d-flex-2">
+                          <span>
+                            <h6>Analise e Desenvolvimento de Sistemas</h6> 
+                            Fev 2019 - Dez 2020
+                          </span>
+                          <div className="t-square"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
               </div>
-            </div> */}
-
+              <hr/>
               <div className="container">
                 <div className='div-1'>
                 <button className='buttonSC'>
