@@ -162,7 +162,7 @@
 
 
 /* Nav */
-a{
+.menubt a{
   text-decoration-line: none;
   color: rgb(248, 221, 221);
 }
