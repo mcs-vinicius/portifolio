@@ -34,11 +34,9 @@
     box-shadow: 0 0 6px rgb(0, 0, 0, 0.5);
     cursor: pointer;   
 }
-/* .card:hover{
-    transition: all 0.3s ease-in-out;
-    transform: scale(1.1);
-    filter: grayscale(.85);
-} */
+.card:hover{
+  filter: grayscale(2.85);
+}
 .card {
     position: relative;
     width: 300px;
