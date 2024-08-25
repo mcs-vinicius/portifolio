@@ -106,7 +106,7 @@
     width: 23px;
     padding: 3px;
     justify-content: center;
-  }
+  }  
   .sci .link-projeto a {
     position: relative;
     text-decoration: none;
@@ -128,11 +128,11 @@
     color: rgba(255, 255, 255, 1);
     margin: auto;
   }
-
-
+  .link-dw{
+    text-decoration: none;
+  }
 
 /* Media Query */
-
 @media only screen and (max-width: 530px) {
     .container-projetos{
         justify-content: center;

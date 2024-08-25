@@ -79,7 +79,7 @@ function Resumo() {
 
                 <div className='div-2'>
                   <button className="button">
-                    <a href="https://ik.imagekit.io/wzl99vhez/Portifolio/Curriculo%20Frontend%20-%20Vinicius%20Monteiro%20.pdf?updatedAt=1722828472211" >
+                    <a className='link-dw' href="https://ik.imagekit.io/wzl99vhez/Portifolio/Curriculo%20Frontend%20-%20Vinicius%20Monteiro%20.pdf?updatedAt=1722828472211" >
                         <span className="button_lg">
                             <span className="button_sl"></span>
                             <span className="button_text">Download CV</span>

@@ -8,46 +8,7 @@ function Projetos() {
         <section className="gallery" id="portafolio">
           <div className="contenedor">
             <h3 className="subtitulo">Projetos</h3>
-            <div className="contenedor-galeria  ">
-                {/* <a className='card' href="https://segundachance.netlify.app/">
-                  <img src="https://images.pexels.com/photos/1183021/pexels-photo-1183021.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" className="img-galeria" />
-                </a>
-              
-                <a className='card' href="">
-                <img src="https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" className="img-galeria"/>
-                </a>
-
-                <a className='card' href="">
-                <img src="https://images.pexels.com/photos/2832061/pexels-photo-2832061.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" className="img-galeria"/>
-                </a>
-                
-                <a className='card' href="">
-                <img src="https://images.pexels.com/photos/2356059/pexels-photo-2356059.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" className="img-galeria"/>
-                </a>
-
-                <a className='card' href="">
-                <img src="https://images.pexels.com/photos/4275885/pexels-photo-4275885.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" className="img-galeria"/>
-                </a>
-
-                <a className='card' href="">
-                <img src="https://images.pexels.com/photos/1424246/pexels-photo-1424246.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" className="img-galeria"/>
-                </a>
-                
-                <a className='card' href="">
-                <img src="https://images.pexels.com/photos/1428787/pexels-photo-1428787.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" className="img-galeria"/>
-                </a>
-                
-                <a className='card' href="">
-                <img src="https://images.pexels.com/photos/2693529/pexels-photo-2693529.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" className="img-galeria"/> 
-                </a>
-                
-                <a className='card' href="">
-
-                <img src="https://images.pexels.com/photos/3022417/pexels-photo-3022417.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" className="img-galeria"/>
-                </a>
-                 */}
-
-              <div className='divpt'>
+            <div className="contenedor-galeria  ">              <div className='divpt'>
                   {/* Projeto 1 */}
                   <div className="card">
                   <img src="https://ik.imagekit.io/wzl99vhez/Portifolio/projetos/Segunda%20chance.png?updatedAt=1724389654700" alt="" className="img-galeria"/>
@@ -60,7 +21,7 @@ function Projetos() {
                           </a>
                         </li>
                         <li className='link-projeto'>
-                          <a href="https://segundachance.netlify.app">
+                          <a href="https://segunda-chance-pi.vercel.app">
                             <img  className="fa-brands" src="https://ik.imagekit.io/wzl99vhez/Portifolio/internet-3-svgrepo-com%20(1).svg?updatedAt=1724386896434" alt="" />
                           </a>
                         </li>
@@ -92,18 +53,17 @@ function Projetos() {
               <div className='divpt'>
                   {/* Projeto 3 */}
                   <div className="card">
-                  <img src="https://images.pexels.com/photos/3022417/pexels-photo-3022417.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" className="img-galeria"/>
+                  <img src="https://ik.imagekit.io/wzl99vhez/Portifolio/projetos/Cafeshop.png?updatedAt=1724566003632" alt="" className="img-galeria"/>
                     <div className="content">
-                      <p className="title"><span>Creative Designer</span></p>
+                      <p className="title"><span>Projeto Cafeteria</span></p>
                       <ul className="sci">
                         <li className='link-projeto'>
-                          <a href="#">
-                            
+                          <a href="https://github.com/mcs-vinicius/Projeto-CoffeShop-Dio">                    
                             <img className="fa-brands" src="https://ik.imagekit.io/wzl99vhez/Portifolio/github-link.svg?updatedAt=1724295879697" alt="" />
                           </a>
                         </li>
                         <li className='link-projeto'>
-                          <a href="#">
+                          <a href="https://projeto-coffe-shop-dio.vercel.app">
                             <img  className="fa-brands" src="https://ik.imagekit.io/wzl99vhez/Portifolio/internet-3-svgrepo-com%20(1).svg?updatedAt=1724386896434" alt="" />
                           </a>
                         </li>
@@ -113,18 +73,17 @@ function Projetos() {
 
                   {/* Projeto 4 */}
                   <div className="card">
-                  <img src="https://images.pexels.com/photos/3022417/pexels-photo-3022417.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" className="img-galeria"/>
+                  <img src="https://ik.imagekit.io/wzl99vhez/Portifolio/projetos/Dogwalker.png?updatedAt=1724566722299" alt="" className="img-galeria"/>
                     <div className="content">
                       <p className="title"><span>Creative Designer</span></p>
                       <ul className="sci">
                         <li className='link-projeto'>
-                          <a href="#">
-                            
+                          <a href="https://github.com/mcs-vinicius/Projeto-CrecheDogWalker">    
                             <img className="fa-brands" src="https://ik.imagekit.io/wzl99vhez/Portifolio/github-link.svg?updatedAt=1724295879697" alt="" />
                           </a>
                         </li>
                         <li className='link-projeto'>
-                          <a href="#">
+                          <a href="https://projeto-creche-dog-walker.vercel.app">
                             <img  className="fa-brands" src="https://ik.imagekit.io/wzl99vhez/Portifolio/internet-3-svgrepo-com%20(1).svg?updatedAt=1724386896434" alt="" />
                           </a>
                         </li>
@@ -136,18 +95,17 @@ function Projetos() {
               <div className='divpt'>
                   {/* Projeto 5 */}
                   <div className="card">
-                  <img src="https://images.pexels.com/photos/3022417/pexels-photo-3022417.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" className="img-galeria"/>
+                  <img src="https://ik.imagekit.io/wzl99vhez/Portifolio/projetos/clone-hbo.png?updatedAt=1724566085730" alt="" className="img-galeria"/>
                     <div className="content">
-                      <p className="title"><span>Creative Designer</span></p>
+                      <p className="title"><span>Clone HBO</span></p>
                       <ul className="sci">
                         <li className='link-projeto'>
-                          <a href="#">
-                            
+                          <a href="https://github.com/mcs-vinicius/Projeto-Clone-HBO-Dio">
                             <img className="fa-brands" src="https://ik.imagekit.io/wzl99vhez/Portifolio/github-link.svg?updatedAt=1724295879697" alt="" />
                           </a>
                         </li>
                         <li className='link-projeto'>
-                          <a href="#">
+                          <a href="https://projeto-clone-hbo-dio.vercel.app">
                             <img  className="fa-brands" src="https://ik.imagekit.io/wzl99vhez/Portifolio/internet-3-svgrepo-com%20(1).svg?updatedAt=1724386896434" alt="" />
                           </a>
                         </li>
