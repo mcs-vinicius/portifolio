@@ -34,8 +34,8 @@
     box-shadow: 0 0 6px rgb(0, 0, 0, 0.5);
     cursor: pointer;   
 }
-.card:hover{
-  filter: grayscale(2.85);
+.card:hover .img-galeria{
+  filter: brightness(50%);
 }
 .card {
     position: relative;
@@ -75,6 +75,7 @@
     transform: scale(1);
     bottom: 25px;
     margin: auto;
+    color: #fff;
   }
   .content .title {
     position: relative;
@@ -86,10 +87,10 @@
     top: 20px;
   }
   .content .title span {
-    font-weight: 700;
-    text-shadow: 5px black;
+    font-weight: 800;
+    text-shadow: 1px 1px 2px rgb(24, 15, 82), 0 0 2em blue, 0 0 0.1em blue;
     font-size: 0.70em;
-    color: black;
+    color: #fff;
   }
   .content .sci {
     position: relative;

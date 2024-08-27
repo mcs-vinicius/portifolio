@@ -13,8 +13,9 @@ function Navbar() {
         <nav>
           <ul className='lista'>
             <li className="menubt"><a href="#Resumo">Resumo</a></li>
-            <li className="menubt"><a href="#Profissional">Experiencias</a></li>
             <li className="menubt"><a href="#Projetos">Projetos</a></li>
+            <li className="menubt"><a href="#Profissional">Experiencias</a></li>
+            
           </ul>
         </nav>
         </div>

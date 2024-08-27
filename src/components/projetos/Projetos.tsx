@@ -75,7 +75,7 @@ function Projetos() {
                   <div className="card">
                   <img src="https://ik.imagekit.io/wzl99vhez/Portifolio/projetos/Dogwalker.png?updatedAt=1724566722299" alt="" className="img-galeria"/>
                     <div className="content">
-                      <p className="title"><span>Creative Designer</span></p>
+                      <p className="title"><span>Creche - Dog Walker</span></p>
                       <ul className="sci">
                         <li className='link-projeto'>
                           <a href="https://github.com/mcs-vinicius/Projeto-CrecheDogWalker">    
@@ -97,7 +97,7 @@ function Projetos() {
                   <div className="card">
                   <img src="https://ik.imagekit.io/wzl99vhez/Portifolio/projetos/clone-hbo.png?updatedAt=1724566085730" alt="" className="img-galeria"/>
                     <div className="content">
-                      <p className="title"><span>Clone HBO</span></p>
+                      <p className="title"><span>Clone - HBO Max</span></p>
                       <ul className="sci">
                         <li className='link-projeto'>
                           <a href="https://github.com/mcs-vinicius/Projeto-Clone-HBO-Dio">

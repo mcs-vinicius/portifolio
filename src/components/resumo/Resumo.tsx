@@ -11,7 +11,10 @@ function Resumo() {
             <h1 className='tituloResumo'>- Desenvolvedor Frontend </h1>
             <h2 className='tituloName'>Vinicius Monteiro</h2>
             <figcaption>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Profissional com forte orientação ao detalhe e sólida formação na área de desenvolvimento de sistemas.
+            Possuo uma abordagem minuciosa em cada etapa do desenvolvimento visando a excelência e a entrega de
+            soluções de alta qualidade. <br />
+            Atualmente estou estudando o framework Flutter buscando a fluencia no desenvolvimento Mobile.
             </figcaption>
 
             {/* Timeline formação */}

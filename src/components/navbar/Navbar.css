@@ -44,16 +44,14 @@
   }
 
   .island__container {
-    width: var(--island-width);
+    width:100%;
+    margin: auto;
     height: var(--island-height);
     border-radius: var(--island-height);
     position: fixed;
     top: 20px;
     left: 50%;
-    translate: -50% -0%;
-    background: rgb(182, 60, 60);
-    
-    
+    translate: -50% -0%;  
   }
 
   .island__bar {
@@ -231,9 +229,9 @@
  }
  
  /* Media Query */
- @media only screen and (max-width: 430px) {
+ @media only screen and (max-width: 530px) {
   header{
-    width: 430px;
+    width: 100%;
   }
   .island__container, .island__bar{
     position: fixed;
@@ -244,24 +242,22 @@
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
-    animation: fade both linear;
-    animation-timeline: scroll(root);
-    animation-range: 0 calc(var(--header-height) * 0.425);
+    left: -20px;
+  }
+  .avatar{
+    margin: auto;
+   
+    
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width:530px) and (max-width: 650px) {
   header{
-    width: 600px;
+    width: 400px;
   }
-  .island__container, .island__bar{
+  .island__container{
     position: fixed;
     margin: auto;
   }
 }
-
-
-
-
-
 

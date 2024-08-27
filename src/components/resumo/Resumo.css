@@ -352,6 +352,7 @@ figcaption {
    align-content: center;
    width: 485px;
    margin-top: -20px;
+ 
  }
  .title{
   text-align: center;
@@ -409,6 +410,7 @@ figcaption {
   figure{
     text-align: justify;
     width: 100%;
+    margin: auto;
   }
   .container{
     display: flex;
@@ -438,6 +440,19 @@ figcaption {
 hr{
   width: 90%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Formação */
 h6 {
 	color: white ;
