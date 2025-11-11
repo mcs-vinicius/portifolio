@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* DEFINIMOS OS KEYFRAMES PRIMEIRO
+*/
+
+/* Keyframe para o fade-in */
+@keyframes fadeIn {
+  /* SEM ASPAS AQUI */
+  0% { 
+    opacity: 0; 
+    transform: translateY(10px);
+  }
+  /* SEM ASPAS AQUI */
+  100% { 
+    opacity: 1; 
+    transform: translateY(0);
+  }
+}
+
+/* Keyframe para a aurora */
+@keyframes pulse-aurora {
+  /* SEM ASPAS AQUI */
+  0% { 
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.7;
+  }
+  /* SEM ASPAS AQUI */
+  100% { 
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 1;
+  }
+}
+
+/* AGORA USAMOS OS KEYFRAMES NAS NOSSAS CLASSES CUSTOMIZADAS
+*/
+@layer utilities {
+  
+  .aurora-bg {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .aurora-bg::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 800px;
+    background-image: radial-gradient(circle, rgba(147, 51, 234, 0.15), transparent 70%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse-aurora 10s infinite alternate; /* <-- Usamos a animação */
+    z-index: 0;
+    filter: blur(100px);
+  }
+
+  /* Classe de animação de fade-in */
+  .fade-in-section {
+    animation: fadeIn 0.5s ease-out forwards; /* <-- Usamos a animação */
+    opacity: 0; /* Estado inicial invisível */
+  }
+
+  /* Atrasos em sequência */
+  .fade-in-section:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .fade-in-section:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .fade-in-section:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  .fade-in-section:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+}

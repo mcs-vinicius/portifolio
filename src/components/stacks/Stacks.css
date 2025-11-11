@@ -1,0 +1,81 @@
+/*
+  Mantemos APENAS as animações do carrossel
+*/
+.bgvc {
+  background-color: aliceblue;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.carousel-wrapper {
+  --width: 100px; /* Largura de cada ícone */
+  --gap: 0;
+  --num-items: 10;
+  --ani-offset: calc(var(--width) * var(--num-items) * -1);
+  --ani-speed: 40s;
+
+  width: 100%; /* Agora é responsivo */
+  overflow: hidden;
+  position: relative;
+}
+
+/* Efeito de fade nas bordas */
+.carousel-wrapper::before,
+.carousel-wrapper::after {
+  content: '';
+  position: absolute;
+  width: 15%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  /* Cor do fade igual ao fundo do card */
+  background-image: linear-gradient(to right, #100F15 0%, transparent 100%);
+}
+
+.carousel-wrapper::before {
+  left: 0;
+}
+
+.carousel-wrapper::after {
+  right: 0;
+  transform: scaleX(-1); /* Reusa o mesmo gradiente */
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  animation: slide var(--ani-speed) linear infinite;
+}
+.carousel-2 {
+  display: flex;
+  align-items: center;
+  animation: slide var(--ani-speed) reverse linear infinite;
+}
+
+.item {
+  flex: 1 0 var(--width);
+  text-align: center;
+  padding: 1rem;
+}
+
+.item > img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  /* Efeito sutil nos ícones */
+  transition: transform 0.3s ease;
+  filter: grayscale(60%);
+  opacity: 0.8;
+}
+
+.item:hover > img {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+@keyframes slide {
+  100% {
+    transform: translateX(var(--ani-offset));
+  }
+}

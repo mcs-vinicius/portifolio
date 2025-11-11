@@ -1,0 +1,247 @@
+/* src/components/resumo/Resumo.css */
+
+/* Animação de digitação (EXISTENTE) */
+.typing-effect {
+  font-family: monospace;
+  border-right: 4px solid #9333ea; /* Cor roxa */
+  overflow: hidden;
+  width: 25ch; /* Largura do seu texto */
+  animation: escrever 3s steps(25), esconder 0.7s infinite step-end alternate;
+  font-size: 2.25rem; /* 3xl */
+  line-height: 2.5rem;
+  text-wrap: nowrap;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+@keyframes escrever {
+    from {
+        width: 0;
+    }
+}
+@keyframes esconder {
+    50% {
+        border-color: transparent ;
+    }
+}
+
+/* Ajuste para telas menores (EXISTENTE) */
+@media (max-width: 600px) {
+  .typing-effect {
+    font-size: 1.5rem; /* era 1.875rem */
+    line-height: 2rem; /* ajustado para o novo tamanho */
+  }
+}
+
+/* =========================================
+  NOVOS ESTILOS DO BOTÃO ADICIONADOS ABAIXO
+=========================================
+*/
+
+.primary-button {
+  font-family: 'Ropa Sans', sans-serif;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  border: 1px solid #0E1822;
+  padding: 0.8rem 2.1rem;
+  /* MUDANÇA: Troquei o 'fill' de #FF4655 (vermelho) para #9333ea (roxo) */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 531.28 200'%3E%3Cdefs%3E%3Cstyle%3E .shape %7B fill: %239333ea %7D %3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpolygon class='shape' points='415.81 200 0 200 115.47 0 531.28 0 415.81 200' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+  background-color: #0E1822;
+  background-size: 200%;
+  background-position: 200%;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+  transition-property: background-position, border, color;
+  position: relative;
+  z-index: 1;
+  /* Adicionado para que o <a> se comporte como botão */
+  display: inline-block;
+  text-decoration: none; 
+}
+
+.primary-button:hover {
+  border: 1px solid #9333ea; /* MUDANÇA: Cor trocada para roxo */
+  color: white;
+  background-position: 40%;
+}
+
+.primary-button:before {
+  content: "";
+  position: absolute;
+  background-color: #0E1822;
+  width: 0.2rem;
+  height: 0.2rem;
+  top: -1px;
+  left: -1px;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.primary-button:hover:before {
+  background-color: white;
+}
+
+.primary-button:hover:after {
+  background-color: white;
+}
+
+.primary-button:after {
+  content: "";
+  position: absolute;
+  background-color: #9333ea; /* MUDANÇA: Cor trocada para roxo */
+  width: 0.3rem;
+  height: 0.3rem;
+  bottom: -1px;
+  right: -1px;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.button-borders {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+
+.button-borders:before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 0.5em);
+  height: 50%;
+  left: -0.3em;
+  top: -0.3em;
+  border: 1px solid #0E1822;
+  border-bottom: 0px;
+}
+
+.button-borders:after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 0.5em);
+  height: 50%;
+  left: -0.3em;
+  bottom: -0.3em;
+  border: 1px solid #0E1822;
+  border-top: 0px;
+  z-index: 0;
+}
+
+/* src/components/resumo/Resumo.css */
+
+/* Animação de digitação (EXISTENTE) */
+.typing-effect {
+  font-family: monospace;
+  border-right: 4px solid #9333ea; /* Cor roxa */
+  overflow: hidden;
+  width: 25ch; /* Largura do seu texto */
+  animation: escrever 3s steps(25), esconder 0.7s infinite step-end alternate;
+  font-size: 2.25rem; /* 3xl */
+  line-height: 2.5rem;
+  text-wrap: nowrap;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+@keyframes escrever {
+    from {
+        width: 0;
+    }
+}
+@keyframes esconder {
+    50% {
+        border-color: transparent ;
+    }
+}
+
+/* Ajuste para telas menores (EXISTENTE) */
+@media (max-width: 600px) {
+  .typing-effect {
+    font-size: 1.5rem; /* era 1.875rem */
+    line-height: 2rem; /* ajustado para o novo tamanho */
+  }
+}
+
+/* =========================================
+  NOVOS ESTILOS DOS ÍCONES SOCIAIS
+=========================================
+*/
+
+.social-login-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Aumentei o espaço */
+  -webkit-box-reflect: below 5px linear-gradient(transparent, #00000055);
+}
+
+.social-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden; /* Esconde o ícone de hover */
+  position: relative;
+  display: block; /* Faz o <a> ser um bloco */
+}
+
+/* Ícone Base (o que você vê primeiro) */
+.icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #100F15; /* Cor do card (dark-card) */
+  transition: 0.4s cubic-bezier(0.46, -0.78, 0.5, 1.56);
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+/* Cor do SVG no ícone base */
+.icon svg {
+  fill: #9333ea; /* Roxo (electric-purple) */
+  height: 1.7em;
+  width: 1.7em;
+  transition: fill 0.3s ease-out;
+}
+
+/* Ícone de Hover (o que aparece por baixo) */
+.social-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.4s cubic-bezier(0.46, -0.78, 0.5, 1.56);
+  position: absolute;
+  top: 50px; /* Começa posicionado abaixo, fora da visão */
+  z-index: 1;
+}
+
+/* Cor do SVG no ícone de hover */
+.social-icon svg {
+  fill: white;
+  height: 1.7em;
+  width: 1.7em;
+}
+
+/* Animação de slide */
+.social-container:hover .icon {
+  transform: translateY(-50px); /* Sobe o ícone base */
+}
+.social-container:hover .social-icon {
+  transform: translateY(-50px); /* Sobe o ícone de hover */
+}
+
+/* Cores de fundo específicas para cada ícone de hover */
+.social-icon-github {
+  background: linear-gradient(180deg, rgba(129, 34, 144, 1) 0%, rgba(77, 34, 124, 1) 91%);
+}
+.social-icon-linkedin {
+  background: #9333ea;
+}
+.social-icon-email {
+   background: linear-gradient(72.44deg, #9333ea 11.92%, #4ade80 85.69%);
+}
